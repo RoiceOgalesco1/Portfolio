@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ogalesco Portfolio</title>
+  <!-- Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body::before {
+      /* background*/
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.12;
+      background: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="white"/><circle cx="10" cy="10" r="1" fill="gray"/><circle cx="50" cy="50" r="1.5" fill="gray"/><circle cx="80" cy="80" r="1" fill="gray"/><circle cx="30" cy="70" r="0.7" fill="gray"/><circle cx="70" cy="30" r="0.7" fill="gray"/></svg>');
+      background-size: 200px 200px;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#F5F5F5] text-[#23272A] font-sans relative">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full flex justify-end items-center px-10 py-6 z-20 bg-[#F5F5F5] bg-opacity-95" style="backdrop-filter: blur(2px);">
+    <nav class="flex items-center space-x-6 text-base font-normal">
+      <a href="#home" class="underline underline-offset-4 decoration-2 text-[#23272A]">Home</a>
+      <a href="#about" class="hover:underline hover:underline-offset-4 text-[#23272A]">About</a>
+      <a href="#experience" class="hover:underline hover:underline-offset-4 text-[#23272A]">Experience</a>
+      <a href="#projects" class="hover:underline hover:underline-offset-4 text-[#23272A]">Projects</a>
+      <a href="#education" class="hover:underline hover:underline-offset-4 text-[#23272A]">Education</a>
+      <a href="#contact" class="hover:underline hover:underline-offset-4 text-[#23272A]">Contact</a>
+    </nav>
+  </header>
+  <main class="flex flex-col items-center w-full">
+    <section class="w-full min-h-screen flex flex-col justify-center items-center text-center pt-40 pb-12">
+      <h1 class="font-serif font-bold text-[clamp(2.5rem,8vw,6rem)] text-[#23272A] mb-12 tracking-tight uppercase">Welcome to my portfolio</h1>
+      <div class="flex flex-col gap-4 w-full max-w-xl mx-auto">
+        <h2 class="font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#23272A]">About</h2>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#23272A]">Experience</h2>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#23272A]">Projects</h2>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#23272A]">Education</h2>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold uppercase tracking-widest text-[#23272A]">Contact</h2>
+      </div>
+    </section>
+  </main>
+  <button class="fixed bottom-6 right-6 z-20 bg-none border-none cursor-pointer opacity-70 p-2 rounded-full hover:opacity-100 hover:bg-[#e5e5e5] transition" title="Toggle dark mode">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#23272A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"/>
+      <path d="M11 3a8 8 0 0 0 0 16"/>
+    </svg>
+  </button>
+</body>
+</html>
