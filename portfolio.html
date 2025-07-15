@@ -6,36 +6,22 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      background: radial-gradient(ellipse at 60% 40%, #23272f 60%, #181a20 100%);
-    }
-    .vertical-text {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      letter-spacing: 0.2em;
-    }
-  </style>
+  <link rel="stylesheet" href="portfolio.css">
+  
 </head>
 <body class="min-h-screen text-white font-sans relative overflow-x-hidden">
+  <!-- Header Navigation -->
   <header class="absolute top-0 left-0 w-full flex justify-end items-center px-10 pt-8 z-20">
-    <!-- Navigation -->
     <nav>
       <ul class="flex gap-10 text-sm tracking-widest font-medium">
         <li><a href="#about" class="hover:text-[#F6E27A] transition">ABOUT</a></li>
         <li><a href="#education" class="hover:text-[#F6E27A] transition">EDUCATION</a></li>
+        <li><a href="#experience" class="hover:text-[#F6E27A] transition">EXPERIENCE</a></li>
         <li><a href="#projects" class="hover:text-[#F6E27A] transition">PROJECTS</a></li>
         <li><a href="#contact" class="hover:text-[#F6E27A] transition">CONTACT</a></li>
       </ul>
     </nav>
   </header>
-
-  <!-- Left Social Icons-->
-  <div class="fixed left-8 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-10">
-    <a href="#" class="hover:text-[#F6E27A] transition" title="GitHub"><i class="fab fa-github text-xl"></i></a>
-    <a href="#" class="hover:text-[#F6E27A] transition" title="LinkedIn"><i class="fab fa-linkedin text-xl"></i></a>
-    <a href="mailto:your.email@example.com" class="hover:text-[#F6E27A] transition" title="Email"><i class="fa-solid fa-envelope text-xl"></i></a>
-  </div>
 
   <!-- Right Scroll-->
   <div class="fixed right-8 top-1/2 -translate-y-1/2 flex flex-col items-center z-10">
@@ -43,8 +29,8 @@
     <span class="w-px h-10 bg-gray-500 mt-2"></span>
   </div>
 
-  <!--Intro -->
-  <main class="flex flex-col items-center justify-center min-h-screen">
+  <!-- Intro (Hero) Section -->
+  <section id="intro" class="flex flex-col items-center justify-center min-h-screen w-full">
     <div class="flex flex-col items-center justify-center w-full">
       <div class="flex flex-col items-center">
         <span class="text-lg text-gray-400 tracking-widest mb-2">HI IM</span>
@@ -54,8 +40,115 @@
         </div>
         <span class="text-[#F6E27A] text-lg md:text-xl font-semibold mt-4 tracking-widest">AN ASPIRING SOFTWARE DEVELOPER</span>
       </div>
-      <div class="mt-16 text-gray-400 text-lg tracking-widest">01</div>
     </div>
-  </main>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-3xl mx-auto py-24 px-4 flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-6 text-[#F6E27A] tracking-widest">ABOUT</h2>
+    <p class="text-lg text-gray-200 text-center max-w-2xl">I'm Roice, an aspiring software developer that is passinate in building web 
+      applications to solve real-world problems. I would also like to learn more about the business side of IT, 
+      generative AI, and cybersecurity.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="max-w-3xl mx-auto py-24 px-4 flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-6 text-[#F6E27A] tracking-widest">EDUCATION</h2>
+    <div class="w-full flex flex-col gap-8">
+      <div class="bg-[#23272f] bg-opacity-80 rounded-xl p-6 shadow-md border-l-4 border-[#F6E27A]">
+        <div class="flex items-center gap-4 mb-2">
+          <i class="fa-solid fa-graduation-cap text-2xl text-[#F6E27A]"></i>
+          <span class="text-xl font-semibold text-white">Bachelor of Science in Information Technology</span>
+        </div>
+        <div class="text-gray-300 text-sm mb-1">University of Asia and the Pacific, 2021 - 2025</div>
+        <div class="text-gray-400">Graduated as a Cum Laude. Focused on web develpment, generative AI, and the business side of IT.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="max-w-3xl mx-auto py-24 px-4 flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-6 text-[#F6E27A] tracking-widest">EXPERIENCE</h2>
+    <div class="w-full flex flex-col gap-8">
+      <div class="bg-[#23272f] bg-opacity-80 rounded-xl p-6 shadow-md border-l-4 border-[#F6E27A]">
+        <div class="flex items-center gap-4 mb-2">
+          <i class="fa-solid fa-briefcase text-2xl text-[#F6E27A]"></i>
+          <span class="text-xl font-semibold text-white">Developer & Tech Support</span>
+        </div>
+        <div class="text-gray-300 text-sm mb-1">ALN Group of Companies| February 2025 - May 2025</div>
+        <div class="text-gray-400">Developed user interfaces for multiple company systems while providing technical support when necessary.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-3xl mx-auto py-24 px-4 flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-6 text-[#F6E27A] tracking-widest">PROJECTS</h2>
+    <div class="w-full flex flex-col gap-8">
+
+      <div class="bg-[#23272f] bg-opacity-80 rounded-xl p-6 shadow-md border-l-4 border-[#F6E27A]">
+        <div class="flex items-center gap-4 mb-2">
+          <i class="fa-solid fa-shirt text-2xl text-[#F6E27A]"></i>
+          <span class="text-xl font-semibold text-white">Styling Fit App</span>
+        </div>
+        <div class="text-gray-400 mb-2">A personal project that allows users to upload photos of their clothes and create multiple outfits.
+          This app uses React Vite and Tailwind CSS for the frontend, while the backend is currently under development. 
+          Once the core functionalities are complete, I plan to enable users to apply their outfits to a customizable avatar and share
+          them on social media platforms. I was able to think of this idea due to personal interest. 
+
+        </div>
+        <a href="#" class="text-[#F6E27A] hover:underline text-sm">View Project</a>
+      </div>
+
+      <div class="bg-[#23272f] bg-opacity-80 rounded-xl p-6 shadow-md border-l-4 border-[#F6E27A]">
+        <div class="flex items-center gap-4 mb-2">
+          <i class="fa-solid fa-boxes-stacked text-2xl text-[#F6E27A]"></i>
+          <span class="text-xl font-semibold text-white">Asset Management System</span>
+        </div>
+        <div class="text-gray-400 mb-2">Developed an Asset Management System for a public school in Bulacan to monitor and track all assets 
+          within the school. Used the ReactJS library to develop the system's interface and connected it to the back-end to ensure the 
+          expected functionalities work as intended.</div>
+        <a href="#" class="text-[#F6E27A] hover:underline text-sm">View Project</a>
+      </div>
+
+      <div class="bg-[#23272f] bg-opacity-80 rounded-xl p-6 shadow-md border-l-4 border-[#F6E27A]">
+        <div class="flex items-center gap-4 mb-2">
+          <i class="fa-solid fa-robot text-2xl text-[#F6E27A]"></i>
+          <span class="text-xl font-semibold text-white">HR Chatbot</span>
+        </div>
+        <div class="text-gray-400 mb-2">Developed an HR chatbot using Dify to answer applicants questions for a generative AI class in the University.</div>
+        <a href="#" class="text-[#F6E27A] hover:underline text-sm">View Project</a>
+      </div>
+
+      <div class="bg-[#23272f] bg-opacity-80 rounded-xl p-6 shadow-md border-l-4 border-[#F6E27A]">
+        <div class="flex items-center gap-4 mb-2">
+          <i class="fa-solid fa-gamepad text-2xl text-[#F6E27A]"></i>
+          <span class="text-xl font-semibold text-white">Web Guessing Game</span>
+        </div>
+        <div class="text-gray-400 mb-2">Developed an interactive, web-based guessing game using vanilla HTML, CSS, and JavaScript for the frontend. The backend was implemented in Java, handling API calls and game logic. Integrated the OpenAI to generate the question.</div>
+        <a href="#" class="text-[#F6E27A] hover:underline text-sm">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-3xl mx-auto py-24 px-4 flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-6 text-[#F6E27A] tracking-widest">CONTACT</h2>
+    <div class="w-full flex flex-col md:flex-row gap-8 items-center justify-center">
+      <a href="https://github.com/RoiceOgalesco1" class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md border-l-4 border-[#F6E27A] text-white hover:bg-[#181a20] transition text-lg" target="_blank">
+        <i class="fab fa-github text-2xl text-[#F6E27A]"></i>
+        <span>https://github.com/RoiceOgalesco1</span>
+      </a>
+      <a href="https://www.linkedin.com/in/roice-ogalesco/" class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md border-l-4 border-[#F6E27A] text-white hover:bg-[#181a20] transition text-lg" target="_blank">
+        <i class="fab fa-linkedin text-2xl text-[#F6E27A]"></i>
+        <span>https://www.linkedin.com/in/roice-ogalesco/</span>
+      </a>
+      <div class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md border-l-4 border-[#F6E27A] text-white text-lg">
+        <i class="fa-solid fa-envelope text-2xl text-[#F6E27A]"></i>
+        <span>roicevianogalesco@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>

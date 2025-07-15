@@ -1,0 +1,15 @@
+body {
+  background: radial-gradient(ellipse at 60% 40%, #23272f 60%, #181a20 100%);
+}
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.2em;
+} 
