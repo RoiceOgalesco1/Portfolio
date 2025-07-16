@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="portfolio.css">
   
 </head>
-<body class="min-h-screen text-white font-sans relative overflow-x-hidden">
+<body class="min-h-screen text-white font-sans relative overflow-x-hidden" style="cursor: none;">
   <!-- Header Navigation -->
   <header class="absolute top-0 left-0 w-full flex justify-end items-center px-10 pt-8 z-20">
     <nav>
@@ -229,20 +229,21 @@
   <section id="contact" class="max-w-3xl mx-auto py-24 px-4 flex flex-col items-center">
     <h2 class="text-3xl font-bold mb-6 text-[#F6E27A] tracking-widest">CONTACT</h2>
     <div class="w-full flex flex-col md:flex-row gap-8 items-center justify-center">
-      <a href="https://github.com/RoiceOgalesco1" class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md border-l-4 border-[#F6E27A] text-white hover:bg-[#181a20] transition text-lg" target="_blank">
+      <a href="https://github.com/RoiceOgalesco1" class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md text-white hover:bg-[#181a20] transition text-lg" target="_blank">
         <i class="fab fa-github text-2xl text-[#F6E27A]"></i>
-        <span>https://github.com/RoiceOgalesco1</span>
       </a>
-      <a href="https://www.linkedin.com/in/roice-ogalesco/" class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md border-l-4 border-[#F6E27A] text-white hover:bg-[#181a20] transition text-lg" target="_blank">
-        <i class="fab fa-linkedin text-2xl text-[#F6E27A]"></i>
-        <span>https://www.linkedin.com/in/roice-ogalesco/</span>
-      </a>
-      <div class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md border-l-4 border-[#F6E27A] text-white text-lg">
+      <div class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md text-white text-lg">
         <i class="fa-solid fa-envelope text-2xl text-[#F6E27A]"></i>
         <span>roicevianogalesco@gmail.com</span>
       </div>
+      <a href="https://www.linkedin.com/in/roice-ogalesco/" class="flex items-center gap-3 bg-[#23272f] bg-opacity-80 px-6 py-4 rounded-xl shadow-md text-white hover:bg-[#181a20] transition text-lg" target="_blank">
+        <i class="fab fa-linkedin text-2xl text-[#F6E27A]"></i>
+      </a>
     </div>
   </section>
 
+  <!-- Mouse Effect -->
+  <div id="mouse-effect" style="pointer-events:none; position:fixed; top:0; left:0; width:40px; height:40px; border-radius:50%; background:rgba(246,226,122,0.2); box-shadow:0 0 24px 8px #F6E27A; transform:translate(-50%,-50%); z-index:50; transition:background 0.2s, box-shadow 0.2s;"></div>
+  <script src="mousePointer.js"></script>
 </body>
 </html>
