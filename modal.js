@@ -8,12 +8,29 @@ const projects = [
     images: ["images/asset1.jpg", "images/asset2.jpg"]
   },
   {
+    title: "Store Inventory Management System",
+    images: [
+      "storeLanding.png",
+      "storeUsers.png",
+      "storeProducts.png",
+      "storeAddProducts.png",
+      "storeArchives.png"
+    ]
+  },
+  {
     title: "HR Chatbot",
-    images: ["images/hrchatbot1.jpg"]
+    images: ["dify.png"]
   },
   {
     title: "Web Guessing Game",
-    images: ["images/guessinggame1.jpg"]
+    images: [
+      "guessBot.png",
+      "guessEntrance.png",
+      "guessGame.png",
+      "guessLoading.png",
+      "guessWelcome.png",
+      "guessWinner.png"
+    ]
   }
 ];
 
@@ -21,7 +38,12 @@ let currentImageIndex = 0;
 
 function renderModalImage(project) {
   const modalImages = document.getElementById('modal-images');
-  if (project.title === "Styling Fit App") {
+  if (
+    project.title === "Styling Fit App" ||
+    project.title === "HR Chatbot" ||
+    project.title === "Web Guessing Game" ||
+    project.title === "Store Inventory Management System"
+  ) {
     modalImages.innerHTML = `<img src="${project.images[currentImageIndex]}" style="width:100%;height:60vh;object-fit:contain;" class="rounded border-2 border-[#F6E27A] bg-[#181a20]" />`;
   } else {
     modalImages.innerHTML = `<img src="${project.images[currentImageIndex]}" class="w-72 h-96 object-cover rounded border-2 border-[#F6E27A] bg-[#181a20]" />`;
